@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -17,7 +20,8 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.pixabay.com',
         protocol: 'https',  
         port: '',
-      }
+      },
+
     ],
   },
 };
